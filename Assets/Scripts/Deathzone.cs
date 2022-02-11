@@ -21,8 +21,9 @@ public class Deathzone : MonoBehaviour
     {
         if(collision.tag =="Player")
         {
-            //if(collision.gameObject.name == "Player") Gameobject.FindGameObjectWithTag.GetComponent<DeathManager>().PlayerOneDeath++;
-            //if(collision.gameObject.name == "Player 2") Gameobject.FindGameObjectWithTag.GetComponent<DeathManager>().PlayerTwoDeath++;
+            int PlayerDeath = PlayerPrefs.GetInt("Player1");
+            if (collision.gameObject.name == "Player") PlayerPrefs.SetInt("Player1", PlayerDeath++ );
+            if(collision.gameObject.name == "Player 2") GameObject.FindGameObjectWithTag("DeathManager").GetComponent<DeathManager>().PlayerTwoDeath++;
             Destroy(collision.gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

@@ -9551,7 +9551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Point: 0
   PointText: {fileID: 1211906052}
-  PointsToEnableTarget: 60
+  PointsToEnableTarget: 1
   TargetToEnable: {fileID: 1307376379}
 --- !u!4 &680439223
 Transform:
@@ -10263,9 +10263,10 @@ GameObject:
   - component: {fileID: 734060903}
   - component: {fileID: 734060902}
   - component: {fileID: 734060901}
+  - component: {fileID: 734060904}
   m_Layer: 0
   m_Name: Deathzone
-  m_TagString: Untagged
+  m_TagString: DeathManager
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10322,6 +10323,20 @@ Transform:
   m_Father: {fileID: 1640536725}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &734060904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734060900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95341b6b13f964edeb6f45095e9c574d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerOneDeath: 0
+  PlayerTwoDeath: 0
 --- !u!1 &735739612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 335022370780808363, guid: d0225066ca9a50e40bacd2a7c95c6674, type: 3}
